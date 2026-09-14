@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/cb41b05e23.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
   <title>Module 2 Final Project (Example)</title>
 </head>
 <body>
   <section id="landing">
     <nav>
       <div class="row">
-        <div class="container nav__container">
-          <figure class="logo__img--wrapper">
-            <img class="logo__img" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Treact Logo">
-          </figure>
+        <div class="nav__container">
+          <img class="logo__img" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Treact Logo">          
           <h1>Treact</h1>
           <ul class="nav__links">
             <li>
@@ -36,32 +35,43 @@
               <a class="nav__link nav__link--primary"href="#" alt="">Sign Up</a>
             </li>
           </ul>
-        </div>
+        </div>        
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list"><a class="menu__link" onclick="closeMenu()" href="#">About</a></li>
+            <li class="menu__list"><a class="menu__link" onclick="closeMenu()" href="#">Blog</a></li>
+            <li class="menu__list"><a class="menu__link" onclick="closeMenu()" href="#pricing">Pricing</a></li>
+            <li class="menu__list"><a class="menu__link" onclick="closeMenu()" href="#">Contact Us</a></li>
+            <li class="menu__list"><a class="menu__link" onclick="closeMenu()" href="#">Login</a></li>
+            <li class="menu__list"><a class="menu__link menu__link--primary" onclick="closeMenu()" href="#">Sign Up</a></li>
+        </ul>        
       </div>
     </nav>
 
     <header>
       <div class="row">
         <div class="container">
-          <div class="header__container">
-            <h2> Beautiful React Templates <span class="text--color">for you.</span></h2>
-            <p class="header--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-            <div class="email">
+          <h2> Beautiful React Templates <span class="text--color">for you.</span></h2>
+          <p class="header--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+          <div class="email">
             <input class="your__email" placeholder="Your E-mail Address">
             <button class="btn">Get Started</button>
           </div>
-            <h3>OUR TRUSTED CUSTOMERS</h3>
+          <h3>OUR TRUSTED CUSTOMERS</h3>
             <figure class="customers__img--wrapper">
               <img class="customers__img" src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Customer Names">
             </figure>
         </div> 
-          <div class="work__img--box">
-            <figure class="work__img--wrapper">
-              <img class="work__img" src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt=""> 
-            </figure>
-          </div>
-        </div>      
-      </div>
+        <figure class="work__img--wrapper">
+          <img class="work__img" src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt=""> 
+        </figure>
+      </div>      
     </header>
   </section>
 
@@ -71,7 +81,7 @@
         <div class="container">
           <h4 class="section__title">FEATURES</h4>
           <h5>We Have Amazing <span class="text--color">Service.</span></h5>
-          <p class="features__para">Lorem ispsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="section--para">Lorem ispsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="feattures__services">
             <div class="feature__secure">
               <div class="features__icon--box">
@@ -80,7 +90,7 @@
                 </figure>
               </div>
               <h6>Secure</h6>
-              <p class="features__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+              <p class="section--para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
             </div>
             <div class="feature__secure">
               <div class="features__icon--box">
@@ -89,7 +99,7 @@
                 </figure>
               </div>
               <h6>24/7 Support</h6>
-              <p class="features__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+              <p class="section--para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
             </div>
             <div class="feature__secure">
               <div class="features__icon--box">
@@ -98,7 +108,7 @@
                 </figure>
               </div>
               <h6>Customizable</h6>
-              <p class="features__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+              <p class="section--para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
             </div>
             <div class="feature__secure">
               <div class="features__icon--box">
@@ -107,7 +117,7 @@
                 </figure>
               </div>
               <h6>Reliable</h6>
-              <p class="features__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+              <p class="section--para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
             </div>
             <div class="feature__secure">
               <div class="features__icon--box">
@@ -116,7 +126,7 @@
                 </figure>
               </div>
               <h6>Fast</h6>
-              <p class="features__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+              <p class="section--para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
             </div>
             <div class="feature__secure">
               <div class="features__icon--box">
@@ -125,7 +135,7 @@
                 </figure>
               </div>
               <h6>Easy</h6>
-              <p class="features__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+              <p class="section--para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
             </div>
           </div>
         </div>
@@ -139,7 +149,7 @@
           <div class="quality__container">
             <h4 class="section__title">QUALITY WORK</h4>
             <h5>Designed & Developed by<span class="text--color">Professionals.</span></h5>
-            <p class="quality--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>            
+            <p class="section--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>            
             <button class="btn">Learn More</button>
           </div> 
           <div class="quality__img--box">
@@ -161,15 +171,15 @@
             <ol class="steps__list">
               <li>
                 <h6>Register</h6>
-                <p>Create an account with us using Google or Facebook.</p>
+                <p class="section--para">Create an account with us using Google or Facebook.</p>
               </li>
               <li>
                 <h6>Download</h6>
-                <p>Browse and Download the template that you like from the marketplace.</p>
+                <p class="section--para">Browse and Download the template that you like from the marketplace.</p>
               </li>
               <li>
                 <h6>Run</h6>
-                <p>Follow the instructions to setup and customize the template to your needs.</p>
+                <p class="section--para">Follow the instructions to setup and customize the template to your needs.</p>
               </li>
             </ol>
           </div> 
@@ -188,20 +198,20 @@
           <div class="values__container">
             <h4 class="section__title">VALUES</h4>
             <h5>We Always Abide by Our <span class=text--color">Principles.</span></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="section--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="values__container--sub">
               <figure>
                 <img src="" alt="">
               </figure>
               <h6>Affordable</h6>
-              <p>We promise to offter you the best rate we can - at par with the industry standard.</p>
+              <p class="section--para">We promise to offter you the best rate we can - at par with the industry standard.</p>
             </div>
             <div class="values__container--sub">
               <figure>
                 <img src="" alt="">
               </figure>
               <h6>Professionalism</h6>
-              <p>We assure you that our templates are designed and created by professional designers.</p>
+              <p class="section--para">We assure you that our templates are designed and created by professional designers.</p>
             </div>
             <button class="btn">Learn More</button>
           </div>
@@ -211,59 +221,66 @@
 
     <section id="pricing">
       <div class="row">
-        <div class="container">
+        <div class="container container__pricing">
           <h4>PRICING</h4>
-          <h5>Reasonable & Flexible <span class="text--color"></span></h5>
-          <div class="pricing__plan--individual">
-            <div class="pricing__price">
-              <p class="price__title">Personal</p>
-              <p class="price__price">$17.99</p>
-              <p class="price__term">MONTHLY</p>
+          <h5>Reasonable & Flexible <span class="text--color">Plans.</span></h5>
+          <p class="section--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="plans">
+
+            <div class="pricing__plan--individual">
+              <div class="pricing__price">
+                <p class="price__title">Personal</p>
+                <p class="price__price">$17.99</p>
+                <p class="price__term">MONTHLY</p>
+              </div>
+              <div class="pricing__description">
+                <h6>For Individuals</h6>
+                <p class="section--para">30 Templates</p>
+                <p class="section--para">7 Landing Pages</p>
+                <p class="section--para">12 Internal Pages</p>
+                <p class="section--para">Basic Assistance</p>
+              </div>
+              <div class="pricing__purchase">
+                <button class="btn btn__personal">BUY NOW</button>
+              </div>
             </div>
-            <div class="pricing__description">
-              <h4>For Individuals</h4>
-              <p>30 Templates</p>
-              <p>7 Landing Pages</p>
-              <p>12 Internal Pages</p>
-              <p>Basic Assistance</p>
+
+            <div class="pricing__plan--business">
+              <div class="pricing__price pricing__business">
+                <p class="price__title price--business">Business</p>
+                <p class="price__price price--business">$37.99</p>
+                <p class="price__term price--business">MONTHLY</p>
+              </div>
+              <div class="pricing__description pricing__business">
+                <h6 class="price--business">For Small Businesses</h6>
+                <p class="price--business">60 Templates</p>
+                <p class="price--business">15 Landing Pages</p>
+              <p class="price--business">22 Internal Pages</p>
+                <p class="price--business">Priority Assistance</p>
+              </div>
+              <div class="pricing__purchase pricing__business">
+                <button class="btn btn__business">BUY NOW</button>
+              </div>
             </div>
-            <div class="pricing__purchase">
-              <button class="btn">BUY NOW</button>
+
+            <div class="pricing__plan--corporation">
+              <div class="pricing__price">
+                <p class="price__title">ENTERPRISE<p>
+                <p class="price__price">$57.99</p>
+                <p class="price__term">MONTHLY</p>
+              </div>
+              <div class="pricing__description">
+                <h4>For Large Companies</h4>
+                <p class="section--para">90 Templates</p>
+                <p class="section--para">27 Landing Pages</p>
+                <p class="section--para">37 Internal Pages</p>
+                <p class="section--para">Personal Assistance</p>
+              </div>
+              <div class="pricing__purchase">
+                <button class="btn btn__enterprise">BUY NOW</button>
+              </div>
             </div>
-          </div>
-          <div class="pricing__plan--business">
-            <div class="pricing__price">
-              <p class="price__title">Business</p>
-              <p class="price__price">$37.99</p>
-              <p class="price__term">MONTHLY</p>
-            </div>
-            <div class="pricing__description">
-              <h4>For Small Businesses</h4>
-              <p>60 Templates</p>
-              <p>15 Landing Pages</p>
-              <p>22 Internal Pages</p>
-              <p>Priority Assistance</p>
-            </div>
-            <div class="pricing__purchase">
-              <button class="btn">BUY NOW</button>
-            </div>
-          </div>
-          <div class="pricing__plan--corporation">
-            <div class="pricing__price">
-              <p class="price__title">ENTERPRISE<p>
-              <p class="price__price">$57.99</p>
-              <p class="price__term">MONTHLY</p>
-            </div>
-            <div class="pricing__description">
-              <h4>For Large Companies</h4>
-              <p>90 Templates</p>
-              <p>27 Landing Pages</p>
-              <p>37 Internal Pages</p>
-              <p>Personal Assistance</p>
-            </div>
-            <div class="pricing__purchase">
-              <button class="btn">BUY NOW</button>
-            </div>
+
           </div>
         </div>
       </div>
@@ -275,7 +292,7 @@
           <div class="testimonials__container">
             <h4>TESTIMONIALS</h4>
             <h5>Our Clients <span class="text--color">Love Us.</span></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+            <p class="section--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
