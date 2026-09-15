@@ -23,11 +23,13 @@
              <a class="nav__link"href="#" alt="">Blog</a>
             </li>
             <li>
-              <a class="nav__link"href="#" alt="">Pricing</a>
+              <a class="nav__link"href="#pricing" alt="">Pricing</a>
             </li>
             <li>
               <a class="nav__link"href="#" alt="">Contact Us</a>
             </li>
+            <br>
+            <br>
             <li>
               <a class="nav__link"href="#" alt="">Login</a>
             </li>
@@ -61,7 +63,7 @@
           <p class="header--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
           <div class="email">
             <input class="your__email" placeholder="Your E-mail Address">
-            <button class="btn">Get Started</button>
+            <button class="btn btn__header">Get Started</button>
           </div>
           <h3>OUR TRUSTED CUSTOMERS</h3>
             <figure class="customers__img--wrapper">
@@ -150,7 +152,7 @@
             <h4 class="section__title">QUALITY WORK</h4>
             <h5>Designed & Developed by<span class="text--color">Professionals.</span></h5>
             <p class="section--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>            
-            <button class="btn">Learn More</button>
+            <button class="btn__quality">Learn More</button>
           </div> 
           <div class="quality__img--box">
             <figure class="quality__img--wrapper">
@@ -224,21 +226,22 @@
         <div class="container container__pricing">
           <h4>PRICING</h4>
           <h5>Reasonable & Flexible <span class="text--color">Plans.</span></h5>
-          <p class="section--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="section--para pricing--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="plans">
 
             <div class="pricing__plan--individual">
+              <div class="plan__stripe plan__stripe--individual"></div>
               <div class="pricing__price">
                 <p class="price__title">Personal</p>
                 <p class="price__price">$17.99</p>
                 <p class="price__term">MONTHLY</p>
               </div>
               <div class="pricing__description">
-                <h6>For Individuals</h6>
-                <p class="section--para">30 Templates</p>
-                <p class="section--para">7 Landing Pages</p>
-                <p class="section--para">12 Internal Pages</p>
-                <p class="section--para">Basic Assistance</p>
+                <h6 class="pricing__title">For Individuals</h6>
+                <p class="price--para">30 Templates</p>
+                <p class="price--para">7 Landing Pages</p>
+                <p class="price--para">12 Internal Pages</p>
+                <p class="price--para">Basic Assistance</p>
               </div>
               <div class="pricing__purchase">
                 <button class="btn btn__personal">BUY NOW</button>
@@ -252,11 +255,11 @@
                 <p class="price__term price--business">MONTHLY</p>
               </div>
               <div class="pricing__description pricing__business">
-                <h6 class="price--business">For Small Businesses</h6>
-                <p class="price--business">60 Templates</p>
-                <p class="price--business">15 Landing Pages</p>
-              <p class="price--business">22 Internal Pages</p>
-                <p class="price--business">Priority Assistance</p>
+                <h6 class="price--business--title">For Small Businesses</h6>
+                <p class="price--para price--business">60 Templates</p>
+                <p class="price--para price--business">15 Landing Pages</p>
+              <p class="price--para price--business">22 Internal Pages</p>
+                <p class="price--para price--business">Priority Assistance</p>
               </div>
               <div class="pricing__purchase pricing__business">
                 <button class="btn btn__business">BUY NOW</button>
@@ -264,17 +267,18 @@
             </div>
 
             <div class="pricing__plan--corporation">
+              <div class="plan__stripe plan__stripe--corporation"></div>
               <div class="pricing__price">
                 <p class="price__title">ENTERPRISE<p>
                 <p class="price__price">$57.99</p>
                 <p class="price__term">MONTHLY</p>
               </div>
               <div class="pricing__description">
-                <h4>For Large Companies</h4>
-                <p class="section--para">90 Templates</p>
-                <p class="section--para">27 Landing Pages</p>
-                <p class="section--para">37 Internal Pages</p>
-                <p class="section--para">Personal Assistance</p>
+                <h6 class="pricing__title">For Large Companies</h6>
+                <p class="price--para">90 Templates</p>
+                <p class="price--para">27 Landing Pages</p>
+                <p class="price--para">37 Internal Pages</p>
+                <p class="price--para">Personal Assistance</p>
               </div>
               <div class="pricing__purchase">
                 <button class="btn btn__enterprise">BUY NOW</button>
@@ -328,10 +332,10 @@
     </section>
 
     <section id="closing">
-      <div class="row">
-        <div class="container">
+      <div class="row closing__row">
+        <div class="container closing__container">
           <div class="closer">
-            <p>Developers all over the world are happily using Treact.</p>
+            Developers all over the world are happily using Treact.
           </div>
           <div class="btn__box">
             <button class="btn btn__started">Get Started</button>
@@ -344,53 +348,55 @@
   </main>
 
   <footer>
-    <div class="footer__links">
-      <div class="footer__links--category">
-        <p>MAIN</p>
-        <a href="">Blog</a>
-        <a href="">FAQs</a>
-        <a href="">Support</a>
-        <a href="">About Us</a>
+    <div class="row">
+      <div class="footer__links">
+        <div class="footer__links--category">
+          <p class="link__header">MAIN</p>
+          <a href="">Blog</a>
+          <a href="">FAQs</a>
+          <a href="">Support</a>
+          <a href="">About Us</a>
+        </div>
+        <div class="footer__links--category">
+          <p class="link__header">PRODUCT</p>
+          <a href="">Log In</a>
+          <a href="">Personal</a>
+          <a href="">Business</a>
+          <a href="">Team</a>
+        </div>
+        <div class="footer__links--category">
+          <p class="link__header">PRESS</p>
+          <a href="">Logos</a>
+          <a href="">Events</a>
+          <a href="">Stories</a>
+          <a href="">office</a>
+        </div>
+        <div class="footer__links--category">
+          <p class="link__header">TEAM</p>
+          <a href="">Career</a>
+          <a href="">Founders</a>
+          <a href="">Culture</a>
+          <a href="">Onboarding</a>
+        </div>
+        <div class="footer__links--category">
+          <p class="link__header">LEGAL</p>
+          <a href="">GDPR</a>
+          <a href="">Privacy Poliy</a>
+          <a href="">Terms of Serivce</a>
+          <a href="">Disclaimer</a>
+        </div>
       </div>
-      <div class="footer__links--category">
-        <p>PRODUCT</p>
-        <a href="">Log In</a>
-        <a href="">Personal</a>
-        <a href="">Business</a>
-        <a href="">Team</a>
-      </div>
-      <div class="footer__links--category">
-        <p>PRESS</p>
-        <a href="">Logos</a>
-        <a href="">Events</a>
-        <a href="">Stories</a>
-        <a href="">office</a>
-      </div>
-      <div class="footer__links--category">
-        <p>TEAM</p>
-        <a href="">Career</a>
-        <a href="">Founders</a>
-        <a href="">Culture</a>
-        <a href="">Onboarding</a>
-      </div>
-      <div class="footer__links--category">
-        <p>LEGAL</p>
-        <a href="">GDPR</a>
-        <a href="">Privacy Poliy</a>
-        <a href="">Terms of Serivce</a>
-        <a href="">Disclaimer</a>
-      </div>
-    </div>
-    <div class="footer__tagline">
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <p>Treact Inc.</p>
-      <p>&copy 2018 Treact Inc. All Rights Reserved.</p>
-      <div class="footer__icon">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
+      <div class="footer__tagline">
+        <figure>
+          <img src="" alt="">
+        </figure>
+        <p>Treact Inc.</p>
+        <p>&copy 2018 Treact Inc. All Rights Reserved.</p>
+        <div class="footer__icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
       </div>
     </div>
   </footer>
