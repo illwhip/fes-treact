@@ -513,6 +513,11 @@ PRICING
   border-radius: 500px;
   transition: all 300ms ease;
   border: none;
+  transition: all 300ms ease;
+}
+
+.btn__personal:hover {
+  transform: translateY(-2px) translateX(1px);
 }
 
 .price--business {
@@ -530,6 +535,10 @@ PRICING
   transition: all 300ms ease;
 }
 
+.btn__business:hover {
+  transform: translateY(-2px) translateX(1px);
+}
+
 .btn__enterprise {
   background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
   color: #f7fafc;
@@ -540,9 +549,12 @@ PRICING
   border-radius: 500px;
   transition: all 300ms ease;
   border: none;
+  transition: all 300ms ease;
 }
 
-
+.btn__enterprise:hover {
+  transform: translateY(-2px) translateX(1px);
+}
 
 
 /* 
