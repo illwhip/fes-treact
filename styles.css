@@ -35,7 +35,7 @@ h5 {
   font-size: 48px;
   color: #243e63;
   line-height: 1.25;
-  letter-spacing: 0.9px;
+  letter-spacing: 1.2px;
   margin: 16px 0;
   font-weight: 900;
 }
@@ -346,7 +346,10 @@ STEPS
 
 */
 
-
+.container__steps {
+  flex-direction: row;
+  
+}
 
 
 /* 
@@ -356,7 +359,7 @@ VALUES
 */
 .row__values {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -371,11 +374,14 @@ VALUES
 .values__container--sub {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 50%;
 }
 
 .icon__box {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .icon--wrapper {
@@ -385,7 +391,17 @@ VALUES
   align-items: center;
   width: 36px;
   height: 36px;
-  background-color: #129a12;
+  background-color: #89f089;
+}
+
+.icon--wrapper--professional {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #f0a0a0;
 }
 
 .values__title {
@@ -400,9 +416,16 @@ VALUES
   color: #fff;
   background-color: #6415ff;
   border-radius: 500px;
-  padding: 16px 32px;
-  font-weight: 700;
+  padding: 12px 32px;
+  font-weight: bold;
   margin-top: 48px;
+  font-size: 14px;
+  transition: all 300ms ease;
+  width: 168px;
+}
+
+.btn__values:hover {
+  background-color: #5011cc;
 }
 
 .values__img--wrapper {
@@ -423,6 +446,8 @@ PRICING
 
 .container__pricing {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -456,8 +481,6 @@ PRICING
   max-width: 384px;
   height: 600px;
   border-radius: 0.5em;
-  padding-left: 8px;
-  padding-right: 8px;
   padding-top: 8px;
   margin-top: 64px;
   margin-right: 32px;
@@ -475,8 +498,6 @@ PRICING
   max-width: 384px;
   height: 600px;
   border-radius: 0.5em;
-  padding-left: 8px;
-  padding-right: 8px;
   padding-top: 8px;
   margin-top: 64px;
   margin-right: 32px;
@@ -529,8 +550,12 @@ PRICING
 }
 
 .pricing__purchase {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 42px;
+}
+
+.description {
+  border-top: 2px solid #667eea;
+  border-bottom: 2px solid #667eea;
 }
 
 .pricing__business {
