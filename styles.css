@@ -672,7 +672,8 @@ PRICING
   align-items: center;
   width: 100%;
   max-width: 384px;
-  height: 600px;
+  height: auto;
+  min-height: 600px;
   border-radius: 0.5em;
   padding-top: 8px;
   margin-top: 64px;
@@ -693,7 +694,8 @@ PRICING
   align-items: center;
   width: 100%;
   max-width: 384px;
-  height: 600px;
+  height: auto;
+  min-height: 600px;
   border-radius: 0.5em;
   padding-top: 8px;
   margin-top: 64px;
@@ -811,12 +813,10 @@ PRICING
 .btn__personal {
   background: linear-gradient(115deg, #38b2ac 0%, #81e6d9 100%);
   color: #f7fafc;
-  position: absolute;
   padding: 16px 32px;
   border-radius: 500px;
   transition: all 300ms ease;
   border: none;
-  transition: all 300ms ease;
 }
 
 .btn__personal:hover {
@@ -830,7 +830,6 @@ PRICING
 .btn__business {
   background-color: #f7fafc;
   color: #6415ff;
-  position: absolute;
   padding: 16px 32px;
   border-radius: 500px;
   border: none;
@@ -844,12 +843,10 @@ PRICING
 .btn__enterprise {
   background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
   color: #f7fafc;
-  position: absolute;
   padding: 16px 32px;
   border-radius: 500px;
   transition: all 300ms ease;
   border: none;
-  transition: all 300ms ease;
 }
 
 .btn__enterprise:hover {
