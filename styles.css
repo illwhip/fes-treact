@@ -981,6 +981,7 @@ CLOSING
   color: #f7fafc;
   font-size: 30px;
   line-height: 1.5;
+  padding: 0 24px;
 }
 
 .btn__box {
@@ -994,7 +995,7 @@ CLOSING
 
 .btn__started {
   background: #f56565;
-  color: #a0aec0;
+  color: #f7fafc;
   padding: 20px 40px;
   border: none;
   border-radius: 500px;
@@ -1166,6 +1167,7 @@ footer {
 
   .closing__container {
     width: 100%;
+    padding: 64px 32px;
   }
 
   .btn__box {
