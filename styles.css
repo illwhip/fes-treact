@@ -435,12 +435,15 @@ QUALTIY WORK
 .quality__img--box {
   width: 50%;
   margin: 0 56px;
+  position: relaive;
+  z-index: 2;
 }
 
 .quality__img--wrapper {
   border-radius: 4px;
   border: 1px solid #e5e7eb;  
   position: relative;
+  z-index: 2;
 }
 
 .quality__img {
@@ -494,10 +497,12 @@ STEPS
   margin: 0 auto;
   padding-top: 64px;
   position: relative;
+  z-index: 2;
 }
 
 .steps__img {
   width: 100%;
+  z-index: 2;
 }
 
 .steps__grid {
