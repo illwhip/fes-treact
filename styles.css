@@ -448,7 +448,7 @@ QUALTIY WORK
 .quality__img {
   width: 100%;
   z-index: 2;
-  position: relaive;
+  position: relative;
 }
 
 .quality__grid {
